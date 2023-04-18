@@ -46,7 +46,7 @@ public class Main {
         doubleSupplier = () -> Math.random() * 100;
 
         Function<Double, Long> function = d -> -d.longValue();
-        Function<Double,Long> absAndRound= ternaryOperator(numberPredicate,doubleLongFunction,function);
+        Function<Double, Long> absAndRound = ternaryOperator(numberPredicate, doubleLongFunction, function);
         System.out.println(absAndRound.apply(-45.5));
     }
 
